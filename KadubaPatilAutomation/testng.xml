@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" parallel="false"
+          name="C:/Users/Kaduba/IdeaProjects/KadubaPatilAutomation/src/test/java/seleniumtestng/ParallelTestingExample.java">
+
+        <parameter name="Browser" value="chrome"/>
+        <parameter name="FirstName" value="Kaduba"/>
+        <parameter name="Surname" value="Patil">
+
+
+        </parameter>
+        <classes><class name="seleniumtestng.ExcelFileExample"/>
+            <class name="seleniumtestng.ParameterExample"/>
+            <class name="seleniumtestng.ExcelFileExample">
+            <methods>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
